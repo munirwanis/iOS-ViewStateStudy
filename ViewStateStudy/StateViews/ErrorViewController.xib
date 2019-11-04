@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ErrorViewController" customModule="ViewStateStudy" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="bJW-uh-X8V" id="62N-Ua-CLD"/>
+                <outlet property="messageLabel" destination="jmE-FU-4Lv" id="fMR-UL-lfn"/>
+                <outlet property="tryAgainButton" destination="dTo-cY-178" id="J7B-sx-h7B"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bJW-uh-X8V">
+                    <rect key="frame" x="16" y="60" width="382" height="368"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="bJW-uh-X8V" secondAttribute="height" multiplier="191:184" id="her-vG-aUv"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTo-cY-178">
+                    <rect key="frame" x="16" y="802" width="382" height="44"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="VSj-DQ-KOW"/>
+                    </constraints>
+                    <state key="normal" title="Try Again">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="tryAgainAction:" destination="-1" eventType="touchUpInside" id="gJu-93-TcX"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jmE-FU-4Lv">
+                    <rect key="frame" x="16" y="444" width="382" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bJW-uh-X8V" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="412-s5-sgu"/>
+                <constraint firstItem="dTo-cY-178" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="4y6-lA-7xF"/>
+                <constraint firstItem="jmE-FU-4Lv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="5l1-ca-Ylv"/>
+                <constraint firstItem="bJW-uh-X8V" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Ak3-89-s2u"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jmE-FU-4Lv" secondAttribute="trailing" constant="16" id="VMG-NH-z0e"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bJW-uh-X8V" secondAttribute="trailing" constant="16" id="dPm-Mf-g0u"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dTo-cY-178" secondAttribute="trailing" constant="16" id="eVz-n5-boY"/>
+                <constraint firstItem="jmE-FU-4Lv" firstAttribute="top" secondItem="bJW-uh-X8V" secondAttribute="bottom" constant="16" id="kyf-8H-FdJ"/>
+                <constraint firstItem="dTo-cY-178" firstAttribute="top" relation="greaterThanOrEqual" secondItem="jmE-FU-4Lv" secondAttribute="bottom" constant="16" id="mWc-3B-viH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dTo-cY-178" secondAttribute="bottom" constant="16" id="t8n-fk-N30"/>
+                <constraint firstItem="bJW-uh-X8V" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="unF-u3-F0C"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingViewController" customModule="ViewStateStudy" customModuleProvider="target">
+            <connections>
+                <outlet property="spinner" destination="iPj-Gm-hRj" id="b1G-jr-Or2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="64K-Xh-g4Z">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="FEo-4c-apV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="iPj-Gm-hRj">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="iPj-Gm-hRj" firstAttribute="centerX" secondItem="FEo-4c-apV" secondAttribute="centerX" id="2pq-eB-Xd3"/>
+                            <constraint firstItem="iPj-Gm-hRj" firstAttribute="centerY" secondItem="FEo-4c-apV" secondAttribute="centerY" id="M33-5o-WC4"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="64K-Xh-g4Z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="45x-Xx-Qdm"/>
+                <constraint firstAttribute="trailing" secondItem="64K-Xh-g4Z" secondAttribute="trailing" id="6Av-JN-7HW"/>
+                <constraint firstItem="64K-Xh-g4Z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fAw-4z-gvs"/>
+                <constraint firstAttribute="bottom" secondItem="64K-Xh-g4Z" secondAttribute="bottom" id="k8A-Xx-SpT"/>
+                <constraint firstItem="64K-Xh-g4Z" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="tu1-Ev-Ogb"/>
+                <constraint firstItem="64K-Xh-g4Z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xsb-Hp-u7j"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40579710144928" y="153.68303571428569"/>
+        </view>
+    </objects>
+</document>
