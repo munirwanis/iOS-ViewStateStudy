@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     struct ViewControllerDisplay: Displayable {
         let message: String
         
-        init() {
-            message = "Escolha um estado:\nDeu certo!"
+        init(message: String? = nil) {
+            self.message = message ?? "Escolha um estado:\nDeu certo!"
         }
     }
     
@@ -78,7 +78,7 @@ class ViewController: UIViewController {
         
         func actionHandler(_ action: UIAlertAction) {
             let text = alert.textFields?.first?.text
-            self.successLabel.text = text
+            self.display = .init(.success(.init(message: text)))
         }
         
         let action = UIAlertAction(title: "OK",

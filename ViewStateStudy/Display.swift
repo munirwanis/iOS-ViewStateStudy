@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias DisplayAction = (()->Void)
+typealias Action = (()->Void)
 
 struct Display<T: Displayable, S: Displayable> {
     enum State {
@@ -21,13 +21,13 @@ struct Display<T: Displayable, S: Displayable> {
     }
     
     let state: State
-    var action: DisplayAction?
+    var action: Action?
     
     init() {
         state = .loading
     }
     
-    init(_ state: State, action: DisplayAction? = nil) {
+    init(_ state: State, action: Action? = nil) {
         self.state = state
         self.action = action
     }

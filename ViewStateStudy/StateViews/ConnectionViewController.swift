@@ -10,7 +10,7 @@ import UIKit
 
 class ConnectionViewController: ErrorViewController {
 
-    init(action: (() -> ())? = {}) {
+    init(action: Action? = {}) {
         let message = "Ops!\nParece que você não está conectado à internet."
         super.init(message: message, iconName: "connection", action: action)
     }

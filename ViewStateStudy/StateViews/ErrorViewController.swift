@@ -13,11 +13,11 @@ class ErrorViewController: UIViewController {
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var tryAgainButton: UIButton!
     
-    private let action: (()->())?
+    private let action: Action?
     private let message: String
     private let icon: UIImage?
     
-    init(message: String? = nil, iconName: String? = nil, action: (()->())? = {}) {
+    init(message: String? = nil, iconName: String? = nil, action: Action? = {}) {
         self.action = action
         self.message = message ?? "Ops!\nAlgo de errado aconteceu..."
         self.icon = UIImage(named: iconName ?? "error")

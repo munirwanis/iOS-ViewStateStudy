@@ -24,7 +24,7 @@ class DisplayViewController<T: Displayable, S: Displayable>: UIViewController {
         defineState(from: display)
     }
     
-    func defineState(from display: Display<T, S>) {
+    private func defineState(from display: Display<T, S>) {
         let currentState: UIViewController
         switch display.state {
         case .loading:
